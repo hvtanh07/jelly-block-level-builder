@@ -1,5 +1,6 @@
 import {describe, it, expect} from 'vitest';
-import LEVELS from '../src/data/levels.json';
+import LEVELS from './fixtures/element_samples.json';
+import GAME from '../src/data/levels.json';
 import {solve, countTraps, check, newGame, reach, groups, applyMove, won, normalize} from '../src/engine.js';
 
 describe('sample levels', () => {
@@ -49,4 +50,16 @@ describe('rules', () => {
     expect(check(bad).some(i => i.lvl === 'bad' && /never clear/.test(i.t))).toBe(true);
     expect(solve(bad).status).toBe('unsolvable');
   });
+});
+
+describe('game levels 1-10 in the builder', () => {
+  it('has levels L0001 to L0010', () => { expect(GAME.map(l => l.id)).toEqual([...Array(10)].map((_, i) => 'L' + String(i + 1).padStart(4, '0'))); });
+  for (const lv of GAME) {
+    it(`${lv.id} has no data problems and solves in its saved minMoves (${lv.solution.minMoves})`, () => {
+      expect(check(lv)).toEqual([]);
+      const r = solve(lv);
+      expect(r.status).toBe('solved');
+      expect(r.moves).toBe(lv.solution.minMoves);
+    });
+  }
 });

@@ -1,6 +1,6 @@
 # Jelly Block Level Builder
 
-A level editor for Jelly Block. It reads and writes the game's `level/v1` JSON. The 7 sample levels (one per element) are preloaded in the list on the left.
+A level editor for Jelly Block. It reads and writes the game's `level/v1` JSON. Game levels 1–10 are preloaded in the list on the left.
 
 Live page: https://hvtanh07.github.io/jelly-block-level-builder/
 
@@ -28,7 +28,7 @@ Edits are saved in the browser's local storage. Export them before clearing site
 
 ## Rules the editor and solver use
 
-From the Jelly Block GDD (1.2 and 1.4). The solver gets the saved `minMoves` and `traps` of all 7 sample levels (`npm test`).
+From the Jelly Block GDD (1.2 and 1.4). The solver gets the saved `minMoves` and `traps` of all 7 element sample levels (`npm test`).
 
 - Coordinates are `[x, y]`, from the top-left cell. Board rows: `.` open cell, `W` wall, `#` no cell.
 - One move is one drag of a block, or of a linked group, to any place it can reach cell by cell. Blocks do not pass walls, other blocks or studs.
@@ -44,5 +44,5 @@ From the Jelly Block GDD (1.2 and 1.4). The solver gets the saved `minMoves` and
 - `src/engine.js`: rules, play test, checks and the solver.
 - `src/vision.js`: screenshot to level.
 - `src/main.js`: the editor UI. `src/worker.js` runs the solver in the background.
-- `src/data/levels.json`: the sample levels.
+- `src/data/levels.json`: game levels 1–10, read from game screenshots. `tests/fixtures/element_samples.json`: the 7 element sample levels the solver tests use.
 - `tests/`: Vitest tests for the solver and the screenshot import.

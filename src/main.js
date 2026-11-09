@@ -11,7 +11,10 @@ const $$ = s => Array.from(document.querySelectorAll(s));
 const NS = 'http://www.w3.org/2000/svg';
 const esc = s => String(s).replace(/[&<>"]/g, c => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;'}[c]));
 const clone = o => JSON.parse(JSON.stringify(o));
-const STORE = 'jellyBlockLevelBuilder.v1';
+const STORE = 'jellyBlockLevelBuilder.v2';
+const OLD_STORE = 'jellyBlockLevelBuilder.v1';
+/* ids of the element samples the first version shipped with; v1 levels with other ids were made by the user */
+const OLD_SAMPLE_IDS = ['L0007', 'L0012', 'L0017', 'L0022', 'L0029', 'L0032', 'L0039'];
 const CS = 100;          // board units per cell
 const PAD = 22;          // board rim
 const hexOf = c => (COLOR[c] || {hex: '#888'}).hex;
@@ -35,7 +38,14 @@ function load() {
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem(STORE) || 'null'); } catch (e) {}
   if (saved && Array.isArray(saved.levels) && saved.levels.length) { levels = saved.levels; cur = Math.min(saved.cur | 0, levels.length - 1); }
-  else { levels = clone(SAMPLES); cur = 0; }
+  else {
+    levels = clone(SAMPLES); cur = 0;
+    /* keep levels made in the first version, after the game levels */
+    try {
+      const old = JSON.parse(localStorage.getItem(OLD_STORE) || 'null');
+      if (old && Array.isArray(old.levels)) old.levels.filter(l => !OLD_SAMPLE_IDS.includes(l.id)).forEach(l => { if (levels.some(x => x.id === l.id)) l.id = l.id + '_old'; levels.push(l); });
+    } catch (e) {}
+  }
   try { const p = JSON.parse(localStorage.getItem(STORE + '.prefs') || '{}'); if (p.paint) paint = Object.assign(paint, p.paint); if (p.tab) tab = p.tab; } catch (e) {}
 }
 function persist() {
@@ -1017,7 +1027,7 @@ function armed(btn, fn) {
   setTimeout(() => { if (btn.classList.contains('armed')) { btn.classList.remove('armed'); btn.textContent = btn.dataset.label; } }, 2500);
 }
 $('#lvDel').addEventListener('click', e => armed(e.currentTarget, () => { if (levels.length < 2) { toast('Keep at least one level.'); return; } levels.splice(cur, 1); cur = Math.min(cur, levels.length - 1); persist(); selectLevel(cur); }));
-$('#btnReset').addEventListener('click', e => armed(e.currentTarget, () => { levels = clone(SAMPLES); cur = 0; persist(); selectLevel(0); toast('Back to the sample levels.'); }));
+$('#btnReset').addEventListener('click', e => armed(e.currentTarget, () => { levels = clone(SAMPLES); cur = 0; persist(); selectLevel(0); toast('Back to the game levels.'); }));
 $('#btnImport').addEventListener('click', openImport);
 $('#btnExportAll').addEventListener('click', () => download('jelly_block_levels.json', JSON.stringify(levels.map(normalize), null, 2)));
 $('#tUndo').addEventListener('click', doUndo);
