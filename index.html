@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Jelly Block Level Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="app">
+  <aside class="rail" aria-label="Levels">
+    <div class="brand">
+      <svg viewBox="0 0 30 30" aria-hidden="true"><rect x="2" y="2" width="16" height="12" rx="4" fill="#19D8F5"/><circle cx="12" cy="8" r="3" fill="#15123B"/><rect x="2" y="16" width="12" height="12" rx="4" fill="#FF2D3D"/><rect x="16" y="16" width="12" height="12" rx="4" fill="#FFC814"/><circle cx="25" cy="8" r="3.4" fill="#28DC8C" stroke="#fff" stroke-width="1.2"/></svg>
+      <div><h1>Jelly Block</h1><p>Level builder</p></div>
+    </div>
+    <div class="rail-tools">
+      <input type="search" id="lvSearch" placeholder="Filter levels" aria-label="Filter levels">
+    </div>
+    <div class="rail-tools">
+      <button class="rbtn" id="lvNew" type="button">New</button>
+      <button class="rbtn" id="lvDup" type="button">Duplicate</button>
+      <button class="rbtn" id="lvUp" type="button" aria-label="Move level up">↑</button>
+      <button class="rbtn" id="lvDown" type="button" aria-label="Move level down">↓</button>
+      <button class="rbtn danger" id="lvDel" type="button">Delete</button>
+    </div>
+    <ul class="list" id="lvList"></ul>
+    <div class="rail-foot">
+      <button class="rbtn" id="btnImport" type="button">Import JSON</button>
+      <button class="rbtn" id="btnExportAll" type="button">Export all</button>
+      <button class="rbtn danger" id="btnReset" type="button">Reset to samples</button>
+      <small id="saveNote">Changes are saved in this browser.</small>
+    </div>
+  </aside>
+
+  <section class="mid" aria-label="Level board">
+    <div class="bar">
+      <span class="lvtitle" id="lvTitle">L0001</span>
+      <div class="seg" role="group" aria-label="Mode">
+        <button type="button" id="modeEdit" aria-pressed="true">Build</button>
+        <button type="button" id="modePlay" aria-pressed="false">Play test</button>
+      </div>
+      <div class="grp" data-edit>
+        <button class="tb" id="tUndo" type="button" title="Undo (Ctrl+Z)"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg><span class="lbl">Undo</span></button>
+        <button class="tb" id="tRedo" type="button" title="Redo (Ctrl+Y)"><svg viewBox="0 0 24 24"><path d="m15 14 5-5-5-5"/><path d="M20 9H9a5 5 0 0 0 0 10h3"/></svg><span class="lbl">Redo</span></button>
+      </div>
+      <div class="grp" data-play hidden>
+        <button class="tb" id="pUndo" type="button" title="Take back the last move (Ctrl+Z)"><svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5"/><path d="M4 9h11a5 5 0 0 1 0 10h-3"/></svg><span class="lbl">Take back</span></button>
+        <button class="tb" id="pRestart" type="button" title="Start the level again (R)"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5"/></svg><span class="lbl">Restart</span></button>
+        <button class="tb" id="pHint" type="button" title="Solve from the current board and play the next move (H)"><svg viewBox="0 0 24 24"><path d="M7 4v16l13-8z"/></svg><span class="lbl">Next solver move</span></button>
+        <button class="tb" id="pAuto" type="button" title="Play the solver's moves to the end"><svg viewBox="0 0 24 24"><path d="M4 4v16l8-8zM12 4v16l8-8z"/></svg><span class="lbl">Auto play</span></button>
+      </div>
+      <span class="spacer"></span>
+      <button class="tb" id="tCopy" type="button" title="Copy this level's JSON"><svg viewBox="0 0 24 24"><rect x="8" y="8" width="12" height="13" rx="2.5"/><path d="M16 8V5.5A2.5 2.5 0 0 0 13.5 3h-7A2.5 2.5 0 0 0 4 5.5v8A2.5 2.5 0 0 0 6.5 16H8"/></svg><span class="lbl">Copy JSON</span></button>
+      <button class="tb" id="tDownload" type="button" title="Download this level as a .json file"><svg viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"/></svg><span class="lbl">Download</span></button>
+    </div>
+    <div class="bar bar2" data-edit>
+      <div class="tools" role="group" aria-label="Tool" id="tools"></div>
+      <div class="grp">
+        <span class="hint">Color</span>
+        <div class="swatches" id="paintColors"></div>
+      </div>
+      <div class="seg small" role="group" aria-label="Hole and stud shape" id="paintKind">
+        <button type="button" data-kind="round" aria-pressed="true" title="Round hole / round stud">● Round</button>
+        <button type="button" data-kind="axle" aria-pressed="false" title="X-shaped hole / X Stud">✕ X</button>
+      </div>
+    </div>
+    <div class="bar bar2" data-play hidden>
+      <div class="hud"><span class="clock" id="hudTime">0:00</span><span id="hudMoves">0 moves</span><span id="hudLeft"></span></div>
+      <div class="boosters">
+        <button class="bst" type="button" id="bHand" aria-pressed="false" title="Tap any block: it is removed at once">Hand <small id="bHandN">0</small></button>
+        <button class="bst" type="button" id="bMagnet" aria-pressed="false" title="Tap a stud: every block and stud of its color clears">Magnet <small id="bMagnetN">0</small></button>
+        <button class="bst" type="button" id="bFreeze" title="Stop the timer for 30 s">Time Freeze <small id="bFreezeN">0</small></button>
+      </div>
+    </div>
+    <div class="stage">
+      <svg id="board" role="application" aria-label="Board"></svg>
+      <div class="banner" id="banner" hidden></div>
+      <div class="coords" id="coords"></div>
+    </div>
+  </section>
+
+  <aside class="insp" aria-label="Inspector">
+    <div class="tabs" role="tablist" id="tabs">
+      <button role="tab" data-tab="level" aria-selected="true">Level</button>
+      <button role="tab" data-tab="sel" aria-selected="false">Selected</button>
+      <button role="tab" data-tab="check" aria-selected="false">Solver <span class="badge" id="chkBadge">0</span></button>
+      <button role="tab" data-tab="image" aria-selected="false">Image import</button>
+      <button role="tab" data-tab="json" aria-selected="false">JSON</button>
+    </div>
+    <div class="pane" id="pane"></div>
+  </aside>
+</div>
+
+<div class="modal" id="modal" hidden>
+  <div class="dlg" role="dialog" aria-modal="true" aria-labelledby="dlgTitle">
+    <header><h2 id="dlgTitle"></h2><button class="ib" id="dlgX" type="button" aria-label="Close">✕</button></header>
+    <div class="bd" id="dlgBody"></div>
+    <footer id="dlgFoot"></footer>
+  </div>
+</div>
+<div class="toast" id="toast" hidden></div>
+<script type="module" src="/src/main.js"></script>
+</body>
+</html>
