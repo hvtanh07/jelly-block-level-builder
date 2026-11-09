@@ -222,7 +222,7 @@ function render() {
     for (let y = 0; y < h; y++) el('text', {x: -PAD - 20, y: y * CS + CS / 2, class: 'gridlab'}, base).textContent = y;
   }
   /* screenshot behind the board */
-  if (ref && ref.show && ref.an && mode === 'edit') {
+  if (ref && ref.show && ref.an && !ref.an.error && mode === 'edit' && ref.levelId === lv.id) {
     const an = ref.an, sx = w * CS / an.rect.w, sy = h * CS / an.rect.h;
     el('image', {href: ref.url, x: -an.rect.x * sx, y: -an.rect.y * sy, width: ref.img.width * sx, height: ref.img.height * sy, opacity: ref.opacity, class: 'refimg', preserveAspectRatio: 'none'}, board);
   }
@@ -788,7 +788,7 @@ function paneImage() {
       <div class="btns"><button class="btn primary" data-act="imNew">Add as a new level</button><button class="btn" data-act="imReplace">Replace this level</button></div>
       ${ref.notes && ref.notes.length ? `<h3>Check these</h3><ul class="notes">${ref.notes.map(n => `<li>${esc(n)}</li>`).join('')}</ul>` : ''}
       <h3>Screenshot behind the board</h3>
-      <label class="chk"><input type="checkbox" id="imShow" ${ref.show ? 'checked' : ''}> Show it in Build mode</label>
+      ${ref.levelId ? `<label class="chk"><input type="checkbox" id="imShow" ${ref.show ? 'checked' : ''}> Show it behind level ${esc(ref.levelId)} in Build mode</label><p class="hint">Off by default. It only shows on the level you imported into, and it is never saved into the level data.</p>` : '<p class="hint">Import the level first, then you can show the screenshot behind it to compare.</p>'}
       <label class="fld" style="margin-top:6px"><span>Opacity</span><input type="range" min="0.1" max="1" step="0.05" id="imOp" value="${ref.opacity}"></label>`;
     }
   }
@@ -967,7 +967,7 @@ function importImageLevel(asNew) {
     let n = levels.length + 1, id; do { id = 'L' + String(n++).padStart(4, '0'); } while (levels.some(x => x.id === id));
     lv.id = id; levels.push(lv); persist(); selectLevel(levels.length - 1);
   } else { lv.id = L().id; levels[cur] = lv; sel = null; commit(); }
-  ref.show = true;
+  ref.levelId = L().id; ref.show = false;
   tab = 'check'; renderAll();
   toast('Level built from the screenshot. Check the notes, then run the solver.');
 }
