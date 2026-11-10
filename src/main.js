@@ -1,6 +1,6 @@
 import './style.css';
 import SAMPLES from './data/levels.json';
-import {COLORS, COLOR, dims, newGame, snap, restore, stateKey, groups, groupOf, reach, applyMove, removeBlocks, stuckReason,
+import {solveSmart, COLORS, COLOR, dims, newGame, snap, restore, stateKey, groups, groupOf, reach, applyMove, removeBlocks, stuckReason,
   cellsOf, socketOf, coverLeft, freezeLeft, studFreezeLeft, studActive, unlocked, won, remaining, clears,
   solve, countTraps, check, statusOf, nextBlockId, normalize, blankLevel, moveText, isOpen} from './engine.js';
 import {analyze, toLevel} from './vision.js';
@@ -37,7 +37,16 @@ const L = () => levels[cur];
 function load() {
   let saved = null;
   try { saved = JSON.parse(localStorage.getItem(STORE) || 'null'); } catch (e) {}
-  if (saved && Array.isArray(saved.levels) && saved.levels.length) { levels = saved.levels; cur = Math.min(saved.cur | 0, levels.length - 1); }
+  if (saved && Array.isArray(saved.levels) && saved.levels.length) {
+    levels = saved.levels; cur = Math.min(saved.cur | 0, levels.length - 1);
+    /* game levels added to the builder after this browser saved its list: put them in, in game order */
+    const offered = new Set(saved.offered || SAMPLES.slice(0, 10).map(l => l.id));
+    SAMPLES.forEach((g, i) => {
+      if (offered.has(g.id) || levels.some(l => l.id === g.id)) return;
+      const prev = i ? levels.findIndex(l => l.id === SAMPLES[i - 1].id) : -1;
+      levels.splice(prev + 1, 0, clone(g));
+    });
+  }
   else {
     levels = clone(SAMPLES); cur = 0;
     /* keep levels made in the first version, after the game levels */
@@ -49,7 +58,7 @@ function load() {
   try { const p = JSON.parse(localStorage.getItem(STORE + '.prefs') || '{}'); if (p.paint) paint = Object.assign(paint, p.paint); if (p.tab) tab = p.tab; } catch (e) {}
 }
 function persist() {
-  try { localStorage.setItem(STORE, JSON.stringify({levels, cur})); $('#saveNote').textContent = 'Changes are saved in this browser. Export to keep a copy.'; }
+  try { localStorage.setItem(STORE, JSON.stringify({levels, cur, offered: SAMPLES.map(l => l.id)})); $('#saveNote').textContent = 'Changes are saved in this browser. Export to keep a copy.'; }
   catch (e) { $('#saveNote').textContent = 'This browser is not saving changes. Export before you close the page.'; }
 }
 function savePrefs() { try { localStorage.setItem(STORE + '.prefs', JSON.stringify({paint, tab})); } catch (e) {} }
@@ -617,7 +626,7 @@ function playUndo() { if (!gameHist.length) return; restore(game, gameHist.pop()
 let worker = null, jobId = 0; const jobs = new Map();
 /* run a job on this thread, used when the browser cannot start the worker */
 function runHere(job, level, extra) {
-  return job === 'traps' ? countTraps(level, extra) : solve(level, extra);
+  return job === 'traps' ? countTraps(level, extra) : solveSmart(level, extra);
 }
 function runJob(job, level, extra) {
   const data = Object.assign({job, level: normalize(level)}, extra || {});
@@ -712,7 +721,7 @@ function paneLevel() {
   <h3>Shortcuts</h3>
   <div class="keys">
     <kbd>V B O S W N L E</kbd><span>Tools: select, block, hole, stud, wall, no cell, link, erase</span>
-    <kbd>1–8</kbd><span>Paint color, or recolor the selection</span>
+    <kbd>1–9</kbd><span>Paint color, or recolor the selection</span>
     <kbd>X</kbd><span>Switch round / X for new holes and studs</span>
     <kbd>Arrows</kbd><span>Nudge the selection</span>
     <span><kbd>R</kbd> <kbd>Shift+R</kbd></span><span>Rotate the block around its hole</span>
@@ -760,7 +769,7 @@ function paneCheck() {
   if (r) {
     if (r.status === 'solved') {
       const match = sol.minMoves === r.moves;
-      s += `<ul class="issues"><li class="ok"><b>Solvable</b> in <b>${r.moves}</b> moves. ${r.nodes} boards searched${sv.ms ? `, ${(sv.ms / 1000).toFixed(1)} s` : ''}.</li>
+      s += `<ul class="issues"><li class="ok"><b>Solvable</b> in <b>${r.moves}</b> moves${r.approx ? ' (found by the fast search on a big level, so a shorter way may exist)' : ''}. ${r.nodes} boards searched${sv.ms ? `, ${(sv.ms / 1000).toFixed(1)} s` : ''}.</li>
       ${sv.traps ? `<li class="${sv.traps.traps ? 'warn' : 'ok'}"><b>${sv.traps.traps}</b> trap move${sv.traps.traps === 1 ? '' : 's'} out of ${sv.traps.total} first moves${sv.traps.unknown ? ` (${sv.traps.unknown} too big to check)` : ''}.</li>` : ''}
       <li class="${match ? 'ok' : 'warn'}">Saved in the level: minMoves ${sol.minMoves ?? '–'}, traps ${sol.traps ?? '–'}.${match ? '' : ' Does not match.'}</li></ul>
       <div class="btns"><button class="btn primary" data-act="saveSol" ${sv.busy ? 'disabled' : ''}>Save to solution</button><button class="btn" data-act="playSol">Watch it in play test</button></div>
@@ -1055,7 +1064,7 @@ document.addEventListener('keydown', e => {
   if (mode === 'play') { if (k === 'r') { startGame(); render(); } if (k === 'h') hintMove(false); return; }
   const t = TOOLS.find(t => t.key.toLowerCase() === k.toLowerCase());
   if (t && !(k === 'R' || k === 'r')) { setTool(t.id); return; }
-  if (/^[1-8]$/.test(k)) { setPaint(COLORS[+k - 1].key); return; }
+  if (/^[1-9]$/.test(k) && COLORS[+k - 1]) { setPaint(COLORS[+k - 1].key); return; }
   if (k === 'x' || k === 'X') { paint.kind = paint.kind === 'round' ? 'axle' : 'round'; savePrefs(); renderTools(); return; }
   if (k === 'r' || k === 'R') { rotateSel(e.shiftKey ? -1 : 1); return; }
   if (k === 'f' || k === 'F') { flipSel(); return; }

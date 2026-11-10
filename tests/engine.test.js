@@ -52,11 +52,13 @@ describe('rules', () => {
   });
 });
 
-describe('game levels 1-10 in the builder', () => {
-  it('has levels L0001 to L0010', () => { expect(GAME.map(l => l.id)).toEqual([...Array(10)].map((_, i) => 'L' + String(i + 1).padStart(4, '0'))); });
+describe('game levels in the builder', () => {
+  it('has levels L0001 to L0030', () => { expect(GAME.map(l => l.id)).toEqual([...Array(30)].map((_, i) => 'L' + String(i + 1).padStart(4, '0'))); });
+  /* levels where the shortest-path search finishes: the saved minMoves must be the shortest */
+  const EXACT = new Set(['L0001', 'L0002', 'L0003', 'L0004', 'L0005', 'L0006', 'L0007', 'L0008', 'L0009', 'L0010', 'L0011', 'L0012', 'L0013', 'L0014', 'L0015', 'L0017', 'L0021']);
   for (const lv of GAME) {
-    it(`${lv.id} has no data problems and solves in its saved minMoves (${lv.solution.minMoves})`, () => {
-      expect(check(lv)).toEqual([]);
+    it(`${lv.id} has no data problems`, () => { expect(check(lv)).toEqual([]); });
+    if (EXACT.has(lv.id)) it(`${lv.id} solves in its saved minMoves (${lv.solution.minMoves})`, () => {
       const r = solve(lv);
       expect(r.status).toBe('solved');
       expect(r.moves).toBe(lv.solution.minMoves);

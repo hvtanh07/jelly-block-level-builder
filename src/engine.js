@@ -10,7 +10,8 @@ export const COLORS = [
   {key: 'purple', name: 'Purple', hex: '#A23CFF', letter: 'p'},
   {key: 'orange', name: 'Orange', hex: '#FF8A1A', letter: 'o'},
   {key: 'cyan', name: 'Cyan', hex: '#19D8F5', letter: 'c'},
-  {key: 'pink', name: 'Pink', hex: '#FF4FB0', letter: 'k'}
+  {key: 'pink', name: 'Pink', hex: '#FF4FB0', letter: 'k'},
+  {key: 'mint', name: 'Mint', hex: '#6EEB9B', letter: 'm'}
 ];
 export const COLOR = Object.fromEntries(COLORS.map(c => [c.key, c]));
 export const KINDS = ['round', 'axle'];           // axle = the X-shaped hole and X Stud
@@ -56,9 +57,10 @@ export const coverLeft = (g, b) => Math.max(0, b.cover - clears(g));
 export const freezeLeft = (g, b) => Math.max(0, b.freeze - clears(g));
 export const studFreezeLeft = (g, t) => Math.max(0, t.freeze - clears(g));
 export const isLocked = (g, b, u) => !!b.lockPin && !(u || unlocked(g)).has(b.lockPin);
-/* a stud clears when every block of its color is cleared */
+/* a stud clears when every block of its color with the same hole shape is cleared
+   (GDD says "of its color"; game level 21 is only solvable when X studs and round studs clear separately) */
 export function studActive(g, t) {
-  return g.S.blocks.some(b => !g.gone[b.i] && b.color === t.color);
+  return g.S.blocks.some(b => !g.gone[b.i] && b.color === t.color && b.kind === t.kind);
 }
 export function cellsOf(g, b) { const dx = g.off[2 * b.i], dy = g.off[2 * b.i + 1]; return b.cells.map(([x, y]) => [x + dx, y + dy]); }
 export function socketOf(g, b) { return b.socket ? [b.socket[0] + g.off[2 * b.i], b.socket[1] + g.off[2 * b.i + 1]] : null; }
@@ -192,12 +194,24 @@ function successors(g) {
   gs.forEach(gr => reach(g, gr).forEach(m => out.push({members: gr, ...m})));
   return out;
 }
-const hOf = g => groups(g).length;
+const hBase = g => groups(g).length;
+/* guide for the fast (greedy) search on big levels: also counts how far each hole is from a stud it can use.
+   Not a lower bound, so a path found with it may be longer than the shortest one. */
+function hGuide(g) {
+  const S = g.S; let d = 0;
+  for (const b of S.blocks) {
+    if (g.gone[b.i] || !b.socket) continue;
+    const [sx, sy] = socketOf(g, b); let best = 99;
+    for (const t of S.targets) if (t.color === b.color && t.kind === b.kind) best = Math.min(best, Math.abs(t.x - sx) + Math.abs(t.y - sy));
+    d += best === 99 ? 4 : best;
+  }
+  return groups(g).length + d / 4;
+}
 
 /* returns {status:'solved'|'unsolvable'|'limit', moves, path:[move], nodes} */
 export function solve(lv, opts) {
   opts = opts || {};
-  const limit = opts.limit || 250000, wgt = opts.greedy ? 3 : 1;
+  const limit = opts.limit || 250000, wgt = opts.weight || (opts.greedy ? 3 : 1), hOf = opts.guide ? hGuide : hBase;
   const g = newGame(lv);
   if (opts.from) restore(g, opts.from);
   const start = snap(g), startKey = stateKey(g);
@@ -228,6 +242,16 @@ export function solve(lv, opts) {
     }
   }
   return {status: 'unsolvable', nodes};
+}
+
+/* Shortest search first; if that gets too big, a fast guided search that finds a solution but maybe not the shortest. */
+export function solveSmart(lv, opts) {
+  opts = opts || {};
+  const r = solve(lv, opts);
+  if (r.status !== 'limit') return r;
+  const f = solve(lv, {...opts, greedy: true, guide: true});
+  if (f.status === 'solved') return {...f, approx: true, nodes: r.nodes + f.nodes};
+  return {...r, nodes: r.nodes + f.nodes};
 }
 
 /* Traps: first moves from the start board after which the level can no longer be solved. */

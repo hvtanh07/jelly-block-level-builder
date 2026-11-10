@@ -10,7 +10,9 @@ export function hsv(r, g, b) {
   if (d) { if (mx === r) h = ((g - b) / d) % 6; else if (mx === g) h = (b - r) / d + 2; else h = (r - g) / d + 4; h *= 60; if (h < 0) h += 360; }
   return [h, mx ? d / mx : 0, mx / 255];
 }
-const HUES = COLORS.map(c => { const n = parseInt(c.hex.slice(1), 16); return {key: c.key, h: hsv(n >> 16, (n >> 8) & 255, n & 255)[0]}; });
+/* hue as drawn in the game, where it differs from the swatch hex: game green is a darker grass green, mint is the light green */
+const GAME_HUE = {green: 106, mint: 139};
+const HUES = COLORS.map(c => { const n = parseInt(c.hex.slice(1), 16); return {key: c.key, h: GAME_HUE[c.key] ?? hsv(n >> 16, (n >> 8) & 255, n & 255)[0]}; });
 const hueDist = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 export function nearestColor(h) { let best = null, bd = 1e9; HUES.forEach(c => { const d = hueDist(h, c.h); if (d < bd) { bd = d; best = c.key; } }); return best; }
 

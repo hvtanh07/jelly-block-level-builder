@@ -2117,5 +2117,8379 @@
       "minMoves": 9,
       "traps": 0
     }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0011",
+    "time": 105,
+    "reward": 40,
+    "board": [
+      ".......",
+      ".......",
+      "...W...",
+      "...W...",
+      ".......",
+      ".......",
+      "...W...",
+      "...W...",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          1,
+          0
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          0
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          4
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          4
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          5
+        ],
+        "color": "orange",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          5
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          8
+        ],
+        "color": "yellow",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
+      },
+      {
+        "id": "o1",
+        "color": "orange",
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "socket": [
+          1,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "socket": [
+          4,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            5,
+            9
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 14,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0012",
+    "time": 300,
+    "reward": 40,
+    "board": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          2
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          4
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          6
+        ],
+        "color": "green",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "socket": [
+          0,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          1,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          0,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 2
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 3
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 10,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0013",
+    "time": 180,
+    "reward": 40,
+    "board": [
+      "#......#",
+      "#......#",
+      "#......#",
+      "........",
+      "........",
+      "#......#",
+      "#......#",
+      "#......#"
+    ],
+    "targets": [
+      {
+        "at": [
+          1,
+          1
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          2
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          3
+        ],
+        "color": "orange",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          3
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          5
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          6
+        ],
+        "color": "blue",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          6,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o1",
+        "color": "orange",
+        "cells": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 2
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o2",
+        "color": "orange",
+        "cells": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 17,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0014",
+    "time": 140,
+    "reward": 40,
+    "board": [
+      "###.###",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "##...##",
+      "##...##"
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          4
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          4
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          8
+        ],
+        "color": "red",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round",
+        "cover": 1
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 3
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round",
+        "cover": 6
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round",
+        "cover": 6
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            3
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            3
+          ]
+        ],
+        "socket": [
+          4,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            2,
+            5
+          ]
+        ],
+        "socket": [
+          2,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          5
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 19,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0015",
+    "time": 140,
+    "reward": 40,
+    "board": [
+      ".......",
+      ".......",
+      ".......",
+      "...W...",
+      "...W...",
+      ".......",
+      ".......",
+      "..WWW..",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          0,
+          0
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          5
+        ],
+        "color": "blue",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            0,
+            9
+          ]
+        ],
+        "socket": [
+          0,
+          7
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "socket": [
+          6,
+          7
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "socket": [
+          1,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "socket": [
+          3,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            4,
+            9
+          ],
+          [
+            5,
+            9
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 14,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0016",
+    "time": 165,
+    "reward": 40,
+    "board": [
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      "........."
+    ],
+    "targets": [
+      {
+        "at": [
+          2,
+          0
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          8,
+          3
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          4
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          2,
+          8
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          8
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          8
+        ],
+        "color": "yellow",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "socket": [
+          7,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          0,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "socket": [
+          6,
+          3
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            8,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "socket": [
+          8,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            4
+          ]
+        ],
+        "socket": [
+          6,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            7,
+            4
+          ],
+          [
+            8,
+            4
+          ]
+        ],
+        "socket": [
+          7,
+          4
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
+      },
+      {
+        "id": "g3",
+        "color": "green",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "socket": [
+          2,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g4",
+        "color": "green",
+        "cells": [
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        "socket": [
+          8,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            7
+          ]
+        ],
+        "socket": [
+          0,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            3,
+            7
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          5,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "socket": [
+          8,
+          7
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 40,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0017",
+    "time": 135,
+    "reward": 40,
+    "board": [
+      "...#...",
+      ".......",
+      ".......",
+      ".......",
+      "...#...",
+      "#######",
+      "#.....#",
+      "#.....#",
+      "#.....#"
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          1
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          2
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          3
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          7
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          8
+        ],
+        "color": "yellow",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "socket": [
+          2,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          1,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g3",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            5,
+            0
+          ]
+        ],
+        "socket": [
+          4,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g4",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            0
+          ]
+        ],
+        "socket": [
+          6,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g5",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          1
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "g6",
+        "color": "green",
+        "cells": [
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "p4",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "p5",
+        "color": "purple",
+        "cells": [
+          [
+            6,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b5",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b6",
+        "color": "blue",
+        "cells": [
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "b7",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "socket": [
+          6,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 8
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          5,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            7
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "socket": [
+          2,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "socket": [
+          2,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            8
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 28,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0018",
+    "time": 170,
+    "reward": 40,
+    "board": [
+      ".......",
+      ".......",
+      "##...##",
+      ".......",
+      ".W...W.",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          6
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          2,
+          6
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          6
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          7
+        ],
+        "color": "purple",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          6,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "socket": [
+          6,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y5",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          5,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g3",
+        "color": "green",
+        "cells": [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "socket": [
+          0,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y6",
+        "color": "yellow",
+        "cells": [
+          [
+            3,
+            8
+          ]
+        ],
+        "socket": [
+          3,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            8
+          ]
+        ],
+        "socket": [
+          4,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 28,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0019",
+    "time": 130,
+    "reward": 40,
+    "board": [
+      "..##..",
+      "......",
+      "#....#",
+      "##..##",
+      "......",
+      "......",
+      "..##.."
+    ],
+    "targets": [
+      {
+        "at": [
+          0,
+          0
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          0
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          1
+        ],
+        "color": "mint",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          6
+        ],
+        "color": "red",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            0
+          ]
+        ],
+        "socket": [
+          4,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          1,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "socket": [
+          0,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          0,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m3",
+        "color": "mint",
+        "cells": [
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 0,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0020",
+    "time": 135,
+    "reward": 40,
+    "board": [
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          0,
+          0
+        ],
+        "color": "pink",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "pink",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          2,
+          2
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          2
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          3
+        ],
+        "color": "mint",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          6
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          8
+        ],
+        "color": "purple",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            4,
+            0
+          ]
+        ],
+        "socket": [
+          3,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k1",
+        "color": "pink",
+        "cells": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k2",
+        "color": "pink",
+        "cells": [
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "socket": [
+          3,
+          5
+        ],
+        "socketKind": "round",
+        "cover": 4
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "socket": [
+          6,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 22,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0021",
+    "time": 300,
+    "reward": 40,
+    "board": [
+      "......",
+      "......",
+      "......",
+      "......",
+      "......",
+      "......",
+      "......",
+      "......"
+    ],
+    "targets": [
+      {
+        "at": [
+          2,
+          0
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          5
+        ],
+        "color": "blue",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          4,
+          5
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          2,
+          6
+        ],
+        "color": "yellow",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          3,
+          6
+        ],
+        "color": "purple",
+        "kind": "axle"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            0,
+            4
+          ]
+        ],
+        "socket": [
+          0,
+          4
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          3,
+          5
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 9,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0022",
+    "time": 180,
+    "reward": 40,
+    "board": [
+      "##...##",
+      "#.....#",
+      "#.....#",
+      "#.....#",
+      ".......",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "mint",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          1
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          2
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          3
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          2,
+          3
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          3,
+          3
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          4,
+          3
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          5,
+          3
+        ],
+        "color": "red",
+        "kind": "axle"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            5
+          ],
+          [
+            0,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          6,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          5,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b5",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m3",
+        "color": "mint",
+        "cells": [
+          [
+            3,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b6",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b7",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "socket": [
+          6,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b8",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m4",
+        "color": "mint",
+        "cells": [
+          [
+            2,
+            7
+          ]
+        ],
+        "socket": [
+          2,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            3,
+            7
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            4,
+            7
+          ],
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          7
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 35,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0023",
+    "time": 140,
+    "reward": 40,
+    "board": [
+      "##.....##",
+      ".........",
+      ".........",
+      ".........",
+      "##.....##",
+      "##.....##",
+      ".........",
+      ".........",
+      ".........",
+      "........."
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "mint",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          5,
+          0
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          0,
+          1
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          8,
+          1
+        ],
+        "color": "orange",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          2
+        ],
+        "color": "mint",
+        "kind": "round"
+      },
+      {
+        "at": [
+          8,
+          2
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          9
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          8,
+          9
+        ],
+        "color": "purple",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            3
+          ]
+        ],
+        "socket": [
+          0,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 5
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            8,
+            3
+          ]
+        ],
+        "socket": [
+          8,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o1",
+        "color": "orange",
+        "cells": [
+          [
+            3,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          0,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            4,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "p4",
+        "color": "purple",
+        "cells": [
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            8,
+            7
+          ]
+        ],
+        "socket": [
+          8,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m3",
+        "color": "mint",
+        "cells": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "axle",
+        "axis": "vertical"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ],
+        "socket": [
+          5,
+          7
+        ],
+        "socketKind": "axle",
+        "axis": "vertical"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            8
+          ],
+          [
+            1,
+            9
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "socket": [
+          2,
+          8
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "p5",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            8
+          ],
+          [
+            4,
+            9
+          ]
+        ],
+        "socket": [
+          4,
+          9
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
+      },
+      {
+        "id": "m4",
+        "color": "mint",
+        "cells": [
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            8
+          ],
+          [
+            6,
+            9
+          ],
+          [
+            7,
+            9
+          ]
+        ],
+        "socket": [
+          6,
+          8
+        ],
+        "socketKind": "axle"
+      }
+    ],
+    "solution": {
+      "minMoves": 29,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0024",
+    "time": 135,
+    "reward": 40,
+    "board": [
+      "#.###.#",
+      "#..#..#",
+      "#.....#",
+      "##...##",
+      "##...##",
+      ".......",
+      ".......",
+      "......."
+    ],
+    "targets": [
+      {
+        "at": [
+          1,
+          0
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          0
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          6
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          6
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          7
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          7
+        ],
+        "color": "pink",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          1,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            5,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "socket": [
+          5,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            2
+          ],
+          [
+            4,
+            3
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k1",
+        "color": "pink",
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            3
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k2",
+        "color": "pink",
+        "cells": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            5,
+            5
+          ],
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          5,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            2,
+            6
+          ],
+          [
+            3,
+            6
+          ],
+          [
+            4,
+            6
+          ]
+        ],
+        "socket": [
+          4,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c5",
+        "color": "cyan",
+        "cells": [
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            2,
+            7
+          ]
+        ],
+        "socket": [
+          2,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k3",
+        "color": "pink",
+        "cells": [
+          [
+            3,
+            7
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g3",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            7
+          ]
+        ],
+        "socket": [
+          4,
+          7
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 32,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0025",
+    "time": 150,
+    "reward": 40,
+    "board": [
+      ".##.##.",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".......",
+      ".##.##."
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          6
+        ],
+        "color": "purple",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          3,
+          7
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          2,
+          8
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          8
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          8
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          9
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          9
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          6,
+          9
+        ],
+        "color": "red",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "axle",
+        "cover": 5
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            0
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "socket": [
+          0,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            2
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "socket": [
+          6,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            3
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          3,
+          5
+        ],
+        "socketKind": "axle",
+        "cover": 3
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          0,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "socket": [
+          2,
+          5
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            4
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            4,
+            6
+          ],
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "socket": [
+          6,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "socket": [
+          1,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p4",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 60,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0026",
+    "time": 105,
+    "reward": 40,
+    "board": [
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          0
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          9
+        ],
+        "color": "pink",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          9
+        ],
+        "color": "mint",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 13
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round",
+        "cover": 13
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "k1",
+        "color": "pink",
+        "cells": [
+          [
+            2,
+            4
+          ],
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ]
+        ],
+        "socket": [
+          2,
+          5
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ]
+        ],
+        "socket": [
+          1,
+          8
+        ],
+        "socketKind": "round",
+        "cover": 10
+      },
+      {
+        "id": "k2",
+        "color": "pink",
+        "cells": [
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          7
+        ],
+        "socketKind": "round",
+        "cover": 10
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "socket": [
+          2,
+          8
+        ],
+        "socketKind": "round",
+        "cover": 10
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "socket": [
+          5,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 13
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "socket": [
+          5,
+          3
+        ],
+        "socketKind": "round",
+        "cover": 13
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "m3",
+        "color": "mint",
+        "cells": [
+          [
+            7,
+            4
+          ],
+          [
+            6,
+            5
+          ],
+          [
+            7,
+            5
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "k3",
+        "color": "pink",
+        "cells": [
+          [
+            5,
+            6
+          ],
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ],
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            5,
+            8
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            7,
+            8
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round",
+        "cover": 10
+      },
+      {
+        "id": "k4",
+        "color": "pink",
+        "cells": [
+          [
+            3,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          3,
+          2
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "m4",
+        "color": "mint",
+        "cells": [
+          [
+            4,
+            1
+          ],
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            3,
+            4
+          ]
+        ],
+        "socket": [
+          3,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "k5",
+        "color": "pink",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m5",
+        "color": "mint",
+        "cells": [
+          [
+            3,
+            5
+          ],
+          [
+            3,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y5",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            7
+          ],
+          [
+            4,
+            8
+          ]
+        ],
+        "socket": [
+          4,
+          7
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      }
+    ],
+    "solution": {
+      "minMoves": 0,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0027",
+    "time": 175,
+    "reward": 40,
+    "board": [
+      ".........",
+      ".........",
+      ".........",
+      ".........",
+      "...W.W...",
+      ".........",
+      "....W....",
+      "....W....",
+      ".........",
+      "........."
+    ],
+    "targets": [
+      {
+        "at": [
+          2,
+          0
+        ],
+        "color": "mint",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          0
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          0,
+          5
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          8,
+          5
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          6
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          6
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          9
+        ],
+        "color": "red",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ]
+        ],
+        "socket": [
+          1,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            3,
+            0
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            5,
+            0
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          0
+        ],
+        "socketKind": "round",
+        "cover": 7
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            7,
+            0
+          ],
+          [
+            8,
+            0
+          ]
+        ],
+        "socket": [
+          8,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m1",
+        "color": "mint",
+        "cells": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            1
+          ],
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            1
+          ],
+          [
+            6,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            7,
+            1
+          ]
+        ],
+        "socket": [
+          7,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            8,
+            1
+          ],
+          [
+            8,
+            2
+          ]
+        ],
+        "socket": [
+          8,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ]
+        ],
+        "socket": [
+          6,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            5
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          4,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            6
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          0,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            7,
+            6
+          ],
+          [
+            8,
+            6
+          ]
+        ],
+        "socket": [
+          8,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            7
+          ],
+          [
+            3,
+            7
+          ]
+        ],
+        "socket": [
+          3,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c5",
+        "color": "cyan",
+        "cells": [
+          [
+            5,
+            7
+          ],
+          [
+            6,
+            7
+          ]
+        ],
+        "socket": [
+          5,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            0,
+            9
+          ],
+          [
+            1,
+            9
+          ]
+        ],
+        "socket": [
+          1,
+          9
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "m2",
+        "color": "mint",
+        "cells": [
+          [
+            2,
+            8
+          ],
+          [
+            2,
+            9
+          ]
+        ],
+        "socket": [
+          2,
+          8
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "p4",
+        "color": "purple",
+        "cells": [
+          [
+            3,
+            8
+          ],
+          [
+            3,
+            9
+          ]
+        ],
+        "socket": [
+          3,
+          8
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            8
+          ],
+          [
+            5,
+            9
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            6,
+            8
+          ],
+          [
+            6,
+            9
+          ]
+        ],
+        "socket": [
+          6,
+          8
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            7,
+            8
+          ],
+          [
+            8,
+            8
+          ],
+          [
+            7,
+            9
+          ],
+          [
+            8,
+            9
+          ]
+        ],
+        "socket": [
+          7,
+          8
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 35,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0028",
+    "time": 200,
+    "reward": 40,
+    "board": [
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........",
+      "........"
+    ],
+    "targets": [
+      {
+        "at": [
+          0,
+          0
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          0
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          0
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          0
+        ],
+        "color": "yellow",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          0,
+          4
+        ],
+        "color": "blue",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          0,
+          5
+        ],
+        "color": "blue",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          0,
+          6
+        ],
+        "color": "blue",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          7,
+          4
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          7,
+          5
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          7,
+          6
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          0,
+          7
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          7
+        ],
+        "color": "red",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            0
+          ]
+        ],
+        "socket": [
+          1,
+          0
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "socket": [
+          3,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            5,
+            0
+          ],
+          [
+            4,
+            1
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            0
+          ]
+        ],
+        "socket": [
+          6,
+          0
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            7,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "socket": [
+          7,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            2,
+            3
+          ]
+        ],
+        "socket": [
+          2,
+          3
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            2
+          ],
+          [
+            5,
+            3
+          ],
+          [
+            6,
+            3
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            3,
+            3
+          ],
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            5,
+            4
+          ],
+          [
+            6,
+            4
+          ],
+          [
+            4,
+            5
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          5,
+          4
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 26,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0029",
+    "time": 220,
+    "reward": 40,
+    "board": [
+      "...##...",
+      "...##...",
+      "........",
+      "........",
+      "........",
+      "...##...",
+      "...##..."
+    ],
+    "targets": [
+      {
+        "at": [
+          3,
+          2
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          2
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          3
+        ],
+        "color": "orange",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          3
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          3,
+          4
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          4,
+          4
+        ],
+        "color": "yellow",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            0,
+            0
+          ]
+        ],
+        "socket": [
+          0,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            1,
+            0
+          ],
+          [
+            2,
+            0
+          ]
+        ],
+        "socket": [
+          2,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            0
+          ]
+        ],
+        "socket": [
+          5,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            0
+          ],
+          [
+            7,
+            0
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        "socket": [
+          6,
+          0
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            1
+          ]
+        ],
+        "socket": [
+          0,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o1",
+        "color": "orange",
+        "cells": [
+          [
+            2,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            5,
+            1
+          ]
+        ],
+        "socket": [
+          5,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          6,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            2
+          ]
+        ],
+        "socket": [
+          0,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            1,
+            2
+          ]
+        ],
+        "socket": [
+          1,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            2,
+            2
+          ]
+        ],
+        "socket": [
+          2,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            5,
+            2
+          ]
+        ],
+        "socket": [
+          5,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            2
+          ],
+          [
+            7,
+            2
+          ]
+        ],
+        "socket": [
+          6,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c3",
+        "color": "cyan",
+        "cells": [
+          [
+            0,
+            3
+          ]
+        ],
+        "socket": [
+          0,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            3
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r4",
+        "color": "red",
+        "cells": [
+          [
+            6,
+            3
+          ],
+          [
+            7,
+            3
+          ]
+        ],
+        "socket": [
+          7,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p3",
+        "color": "purple",
+        "cells": [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          0,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c4",
+        "color": "cyan",
+        "cells": [
+          [
+            6,
+            4
+          ]
+        ],
+        "socket": [
+          6,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p4",
+        "color": "purple",
+        "cells": [
+          [
+            7,
+            4
+          ]
+        ],
+        "socket": [
+          7,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c5",
+        "color": "cyan",
+        "cells": [
+          [
+            1,
+            5
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r5",
+        "color": "red",
+        "cells": [
+          [
+            5,
+            5
+          ]
+        ],
+        "socket": [
+          5,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b5",
+        "color": "blue",
+        "cells": [
+          [
+            7,
+            5
+          ]
+        ],
+        "socket": [
+          7,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o2",
+        "color": "orange",
+        "cells": [
+          [
+            0,
+            6
+          ]
+        ],
+        "socket": [
+          0,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y5",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          2,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y6",
+        "color": "yellow",
+        "cells": [
+          [
+            5,
+            6
+          ]
+        ],
+        "socket": [
+          5,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p5",
+        "color": "purple",
+        "cells": [
+          [
+            6,
+            6
+          ],
+          [
+            7,
+            6
+          ]
+        ],
+        "socket": [
+          6,
+          6
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 43,
+      "traps": 0
+    }
+  },
+  {
+    "schema": "level/v1",
+    "id": "L0030",
+    "time": 165,
+    "reward": 40,
+    "board": [
+      ".........",
+      ".........",
+      "..WW.WW..",
+      "..WW.WW..",
+      ".........",
+      ".........",
+      "..W...W..",
+      ".........",
+      "....W....",
+      "#.......#"
+    ],
+    "targets": [
+      {
+        "at": [
+          0,
+          2
+        ],
+        "color": "red",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          8,
+          2
+        ],
+        "color": "green",
+        "kind": "axle"
+      },
+      {
+        "at": [
+          4,
+          7
+        ],
+        "color": "blue",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          8
+        ],
+        "color": "purple",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          8
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          1,
+          9
+        ],
+        "color": "cyan",
+        "kind": "round"
+      },
+      {
+        "at": [
+          2,
+          9
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          9
+        ],
+        "color": "green",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          9
+        ],
+        "color": "orange",
+        "kind": "round"
+      }
+    ],
+    "blocks": [
+      {
+        "id": "r1",
+        "color": "red",
+        "cells": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        "socket": [
+          1,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y1",
+        "color": "yellow",
+        "cells": [
+          [
+            2,
+            0
+          ],
+          [
+            3,
+            0
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        "socket": [
+          2,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o1",
+        "color": "orange",
+        "cells": [
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "socket": [
+          4,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p1",
+        "color": "purple",
+        "cells": [
+          [
+            5,
+            0
+          ],
+          [
+            6,
+            0
+          ],
+          [
+            5,
+            1
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        "socket": [
+          6,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g1",
+        "color": "green",
+        "cells": [
+          [
+            7,
+            0
+          ],
+          [
+            8,
+            0
+          ],
+          [
+            7,
+            1
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        "socket": [
+          7,
+          1
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            4,
+            2
+          ]
+        ],
+        "socket": [
+          4,
+          2
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b1",
+        "color": "blue",
+        "cells": [
+          [
+            1,
+            3
+          ]
+        ],
+        "socket": [
+          1,
+          3
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            4,
+            3
+          ],
+          [
+            3,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            5,
+            4
+          ]
+        ],
+        "socket": [
+          4,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            7,
+            3
+          ],
+          [
+            7,
+            4
+          ],
+          [
+            7,
+            5
+          ],
+          [
+            6,
+            4
+          ]
+        ],
+        "socket": [
+          7,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y3",
+        "color": "yellow",
+        "cells": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        "socket": [
+          1,
+          4
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "p2",
+        "color": "purple",
+        "cells": [
+          [
+            1,
+            5
+          ],
+          [
+            1,
+            6
+          ]
+        ],
+        "socket": [
+          1,
+          6
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            2,
+            5
+          ],
+          [
+            3,
+            5
+          ]
+        ],
+        "socket": [
+          2,
+          5
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "g3",
+        "color": "green",
+        "cells": [
+          [
+            5,
+            5
+          ],
+          [
+            6,
+            5
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "r3",
+        "color": "red",
+        "cells": [
+          [
+            7,
+            6
+          ]
+        ],
+        "socket": [
+          7,
+          6
+        ],
+        "socketKind": "axle"
+      },
+      {
+        "id": "b3",
+        "color": "blue",
+        "cells": [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "socket": [
+          1,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "o2",
+        "color": "orange",
+        "cells": [
+          [
+            2,
+            7
+          ],
+          [
+            2,
+            8
+          ]
+        ],
+        "socket": [
+          2,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c1",
+        "color": "cyan",
+        "cells": [
+          [
+            3,
+            7
+          ],
+          [
+            3,
+            8
+          ]
+        ],
+        "socket": [
+          3,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "g4",
+        "color": "green",
+        "cells": [
+          [
+            5,
+            7
+          ],
+          [
+            5,
+            8
+          ]
+        ],
+        "socket": [
+          5,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "b4",
+        "color": "blue",
+        "cells": [
+          [
+            6,
+            7
+          ],
+          [
+            6,
+            8
+          ]
+        ],
+        "socket": [
+          6,
+          8
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "y4",
+        "color": "yellow",
+        "cells": [
+          [
+            7,
+            7
+          ]
+        ],
+        "socket": [
+          7,
+          7
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "c2",
+        "color": "cyan",
+        "cells": [
+          [
+            8,
+            7
+          ]
+        ],
+        "socket": [
+          8,
+          7
+        ],
+        "socketKind": "round"
+      }
+    ],
+    "solution": {
+      "minMoves": 66,
+      "traps": 0
+    }
   }
 ]
