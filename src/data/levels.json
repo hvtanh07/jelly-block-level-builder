@@ -1916,13 +1916,13 @@
     "reward": 40,
     "hard": true,
     "board": [
-      "#.######",
+      "#.###..#",
       ".......#",
       "#.......",
       "#.......",
       ".......#",
       ".......#",
-      "#......#",
+      "#.......",
       "###..###"
     ],
     "targets": [
@@ -1989,6 +1989,30 @@
         ],
         "color": "pink",
         "kind": "round"
+      },
+      {
+        "at": [
+          5,
+          0
+        ],
+        "color": "red",
+        "kind": "round"
+      },
+      {
+        "at": [
+          6,
+          0
+        ],
+        "color": "yellow",
+        "kind": "round"
+      },
+      {
+        "at": [
+          7,
+          6
+        ],
+        "color": "blue",
+        "kind": "round"
       }
     ],
     "blocks": [
@@ -1997,16 +2021,16 @@
         "color": "red",
         "cells": [
           [
-            4,
+            5,
             1
           ],
           [
-            5,
+            6,
             1
           ]
         ],
         "socket": [
-          4,
+          5,
           1
         ],
         "socketKind": "round",
@@ -2085,16 +2109,16 @@
         "color": "purple",
         "cells": [
           [
-            2,
+            3,
             4
           ],
           [
-            3,
+            4,
             4
           ]
         ],
         "socket": [
-          2,
+          3,
           4
         ],
         "socketKind": "round",
@@ -2146,27 +2170,95 @@
         "cells": [
           [
             4,
-            4
+            3
+          ],
+          [
+            4,
+            1
           ],
           [
             4,
             2
-          ],
-          [
-            4,
-            3
           ]
         ],
         "socket": [
           4,
-          4
+          3
         ],
         "socketKind": "round",
         "axis": "vertical"
+      },
+      {
+        "id": "r2",
+        "color": "red",
+        "cells": [
+          [
+            5,
+            2
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            5,
+            3
+          ]
+        ],
+        "socket": [
+          5,
+          2
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "y2",
+        "color": "yellow",
+        "cells": [
+          [
+            6,
+            5
+          ],
+          [
+            6,
+            6
+          ]
+        ],
+        "socket": [
+          6,
+          5
+        ],
+        "socketKind": "round",
+        "axis": "vertical"
+      },
+      {
+        "id": "b2",
+        "color": "blue",
+        "cells": [
+          [
+            3,
+            6
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            2,
+            6
+          ]
+        ],
+        "socket": [
+          3,
+          6
+        ],
+        "socketKind": "round",
+        "axis": "horizontal"
       }
     ],
     "solution": {
-      "minMoves": 16,
+      "minMoves": 22,
       "traps": 0
     }
   },
@@ -13028,28 +13120,28 @@
     "reward": 40,
     "hard": true,
     "board": [
-      ".......",
-      ".W.W.W.",
-      ".......",
-      "WWW.WWW",
-      ".......",
+      "......W",
+      "WW.W.WW",
+      "W......",
+      ".W....W",
       "......W",
       ".......",
-      "......."
+      "......W",
+      "..W...W"
     ],
     "targets": [
       {
         "at": [
-          0,
-          0
+          1,
+          4
         ],
         "color": "red",
         "kind": "round"
       },
       {
         "at": [
-          3,
-          4
+          4,
+          0
         ],
         "color": "blue",
         "kind": "round"
@@ -13057,47 +13149,47 @@
       {
         "at": [
           6,
-          0
+          5
         ],
         "color": "yellow",
         "kind": "round"
       },
       {
         "at": [
-          0,
-          7
+          6,
+          2
         ],
         "color": "orange",
         "kind": "round"
       },
       {
         "at": [
-          2,
-          6
+          3,
+          2
         ],
         "color": "purple",
         "kind": "round"
       },
       {
         "at": [
-          3,
-          7
+          4,
+          6
         ],
         "color": "cyan",
         "kind": "round"
       },
       {
         "at": [
-          2,
-          0
+          4,
+          1
         ],
         "color": "green",
         "kind": "round"
       },
       {
         "at": [
-          4,
-          0
+          3,
+          6
         ],
         "color": "pink",
         "kind": "round"
@@ -13109,13 +13201,13 @@
         "color": "green",
         "cells": [
           [
-            4,
-            2
+            5,
+            4
           ]
         ],
         "socket": [
-          4,
-          2
+          5,
+          4
         ],
         "socketKind": "round",
         "cover": 1
@@ -13126,18 +13218,33 @@
         "cells": [
           [
             5,
-            2
+            3
           ]
         ],
         "socket": [
           5,
-          2
+          3
         ],
         "socketKind": "round"
       },
       {
         "id": "o1",
         "color": "orange",
+        "cells": [
+          [
+            0,
+            5
+          ]
+        ],
+        "socket": [
+          0,
+          5
+        ],
+        "socketKind": "round"
+      },
+      {
+        "id": "r1",
+        "color": "red",
         "cells": [
           [
             1,
@@ -13151,8 +13258,8 @@
         "socketKind": "round"
       },
       {
-        "id": "r1",
-        "color": "red",
+        "id": "b1",
+        "color": "blue",
         "cells": [
           [
             2,
@@ -13166,8 +13273,8 @@
         "socketKind": "round"
       },
       {
-        "id": "b1",
-        "color": "blue",
+        "id": "y1",
+        "color": "yellow",
         "cells": [
           [
             3,
@@ -13178,21 +13285,6 @@
           3,
           5
         ],
-        "socketKind": "round"
-      },
-      {
-        "id": "y1",
-        "color": "yellow",
-        "cells": [
-          [
-            4,
-            5
-          ]
-        ],
-        "socket": [
-          4,
-          5
-        ],
         "socketKind": "round",
         "lockPin": "purple"
       },
@@ -13201,25 +13293,25 @@
         "color": "cyan",
         "cells": [
           [
-            4,
-            7
+            3,
+            4
+          ],
+          [
+            3,
+            3
           ],
           [
             4,
-            6
+            3
           ],
           [
-            5,
-            6
-          ],
-          [
-            5,
-            7
+            4,
+            4
           ]
         ],
         "socket": [
-          4,
-          7
+          3,
+          4
         ],
         "socketKind": "round",
         "freeze": 2
@@ -13229,23 +13321,33 @@
         "color": "purple",
         "cells": [
           [
-            6,
-            6
+            5,
+            5
           ],
           [
-            6,
-            7
+            5,
+            6
           ]
         ],
         "socket": [
-          6,
-          6
+          5,
+          5
         ],
         "socketKind": "round",
         "spoon": "purple"
       }
     ],
     "joints": [
+      {
+        "a": [
+          0,
+          5
+        ],
+        "b": [
+          1,
+          5
+        ]
+      },
       {
         "a": [
           1,
@@ -13265,20 +13367,10 @@
           3,
           5
         ]
-      },
-      {
-        "a": [
-          3,
-          5
-        ],
-        "b": [
-          4,
-          5
-        ]
       }
     ],
     "solution": {
-      "minMoves": 9,
+      "minMoves": 21,
       "traps": 0
     }
   },
