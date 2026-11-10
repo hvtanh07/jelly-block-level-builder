@@ -65,3 +65,15 @@ describe('game levels in the builder', () => {
     });
   }
 });
+
+describe('hard flag', () => {
+  const base = {schema: 'level/v1', id: 'L0005', time: 110, reward: 50, board: ['..'], targets: [], blocks: [], solution: {minMoves: 0, traps: 0}};
+  it('writes hard: true right after reward when the level is marked hard', () => {
+    expect(Object.keys(normalize({...base, hard: true})).slice(0, 6)).toEqual(['schema', 'id', 'time', 'reward', 'hard', 'board']);
+    expect(normalize({...base, hard: true}).hard).toBe(true);
+  });
+  it('leaves hard out when the level is not hard', () => {
+    expect('hard' in normalize(base)).toBe(false);
+    expect('hard' in normalize({...base, hard: false})).toBe(false);
+  });
+});

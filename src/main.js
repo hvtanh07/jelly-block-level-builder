@@ -100,7 +100,7 @@ function refreshList() {
   $('#lvList').innerHTML = levels.map((lv, i) => {
     if (q && !(String(lv.id).toLowerCase().includes(q) || elemTags(lv).join(' ').includes(q))) return '';
     const st = statusOf(check(lv)), {w, h} = dims(lv), ch = isChanged(lv), el = elemTags(lv);
-    return `<li><button type="button" class="lv" data-i="${i}" aria-current="${i === cur}"><span class="n">${i + 1}</span><span><span class="t">${esc(lv.id)}</span><span class="m">${ch ? '<i>● </i>' : ''}${w}×${h} · ${lv.blocks.length} blocks${el.length ? ' · ' + el.join(', ') : ''}</span></span><span class="dot ${st}" title="${st === 'ok' ? 'No problems' : st === 'warn' ? 'Has warnings' : 'Has errors'}"></span></button></li>`;
+    return `<li><button type="button" class="lv" data-i="${i}" aria-current="${i === cur}"><span class="n">${i + 1}</span><span><span class="t">${esc(lv.id)}</span><span class="m">${ch ? '<i>● </i>' : ''}${lv.hard ? '<b class="hard">Hard</b> · ' : ''}${w}×${h} · ${lv.blocks.length} blocks${el.length ? ' · ' + el.join(', ') : ''}</span></span><span class="dot ${st}" title="${st === 'ok' ? 'No problems' : st === 'warn' ? 'Has warnings' : 'Has errors'}"></span></button></li>`;
   }).join('');
   const a = $('#lvList [aria-current="true"]'); if (a) a.scrollIntoView({block: 'nearest'});
 }
@@ -708,7 +708,7 @@ function paneLevel() {
     <label class="fld"><span>Id <code>id</code></span><input data-lv="id" value="${esc(lv.id)}"></label>
     <label class="fld"><span>Time, seconds <code>time</code></span><input type="number" min="0" step="5" data-lv="time" value="${lv.time}"></label>
     <label class="fld"><span>Reward <code>reward</code></span><input type="number" min="0" data-lv="reward" value="${lv.reward}"></label>
-    <span></span>
+    <label class="fld"><span>Hard level <code>hard</code></span><span class="chk"><input type="checkbox" data-hard ${lv.hard ? 'checked' : ''}> Mark as hard</span></label>
     <label class="fld"><span>Columns</span><input type="number" min="2" max="16" data-size="w" value="${w}"></label>
     <label class="fld"><span>Rows</span><input type="number" min="2" max="18" data-size="h" value="${h}"></label>
     <label class="fld"><span>Min moves <code>solution.minMoves</code></span><input type="number" min="0" data-sol="minMoves" value="${sol.minMoves}"></label>
@@ -721,7 +721,7 @@ function paneLevel() {
   <h3>Shortcuts</h3>
   <div class="keys">
     <kbd>V B O S W N L E</kbd><span>Tools: select, block, hole, stud, wall, no cell, link, erase</span>
-    <kbd>1–9</kbd><span>Paint color, or recolor the selection</span>
+    <kbd>1–8</kbd><span>Paint color, or recolor the selection</span>
     <kbd>X</kbd><span>Switch round / X for new holes and studs</span>
     <kbd>Arrows</kbd><span>Nudge the selection</span>
     <span><kbd>R</kbd> <kbd>Shift+R</kbd></span><span>Rotate the block around its hole</span>
@@ -834,6 +834,7 @@ function drawPreview() {
 $('#pane').addEventListener('input', e => {
   const t = e.target, lv = L();
   if (t.dataset.lv) { lv[t.dataset.lv] = t.type === 'number' ? Math.max(0, +t.value || 0) : t.value; if (t.dataset.lv === 'id') { $('#lvTitle').textContent = lv.id; } commit(); return; }
+  if ('hard' in t.dataset) { if (t.checked) lv.hard = true; else delete lv.hard; commit(); return; }
   if (t.dataset.sol) { lv.solution = lv.solution || {minMoves: 0, traps: 0}; lv.solution[t.dataset.sol] = Math.max(0, +t.value || 0); commit(); return; }
   if (t.dataset.bnum && sel && sel.type === 'block') { const b = lv.blocks[sel.i], v = Math.max(0, +t.value || 0); if (v) b[t.dataset.bnum] = v; else delete b[t.dataset.bnum]; commit(); render(); return; }
   if ('sfreeze' in t.dataset && sel && sel.type === 'stud') { const s = lv.targets[sel.i], v = Math.max(0, +t.value || 0); if (v) s.freeze = v; else delete s.freeze; commit(); render(); return; }

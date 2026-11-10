@@ -59,6 +59,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .lv[aria-current="true"] .n{color:var(--rail-ink)}
 .lv .t{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lv .m{display:block;color:var(--rail-muted);font-size:11px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lv .m .hard{color:#FF8A1A;font-weight:700}
 .lv .m i{font-style:normal;color:#F4BE0B}
 .dot{width:9px;height:9px;border-radius:50%;background:#5BD08A}
 .dot.warn{background:#F2C14E}.dot.bad{background:#FF7A80}

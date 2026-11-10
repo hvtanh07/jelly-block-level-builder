@@ -360,7 +360,10 @@ export function normalize(lv) {
     return o;
   };
   const target = t => { const o = {at: [t.at[0], t.at[1]], color: t.color, kind: t.kind || 'round'}; if (t.freeze) o.freeze = t.freeze | 0; return o; };
-  const o = {schema: lv.schema || 'level/v1', id: lv.id, time: lv.time, reward: lv.reward, board: lv.board.slice(), targets: lv.targets.map(target), blocks: lv.blocks.map(block)};
+  /* hard is only written when the level is marked hard, right after reward */
+  const o = {schema: lv.schema || 'level/v1', id: lv.id, time: lv.time, reward: lv.reward};
+  if (lv.hard) o.hard = true;
+  Object.assign(o, {board: lv.board.slice(), targets: lv.targets.map(target), blocks: lv.blocks.map(block)});
   if (lv.joints && lv.joints.length) o.joints = lv.joints.map(j => ({a: [j.a[0], j.a[1]], b: [j.b[0], j.b[1]]}));
   o.solution = {minMoves: lv.solution ? lv.solution.minMoves : 0, traps: lv.solution ? lv.solution.traps : 0};
   return o;
