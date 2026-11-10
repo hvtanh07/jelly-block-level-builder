@@ -55,7 +55,7 @@ describe('rules', () => {
 describe('game levels in the builder', () => {
   it('has levels L0001 to L0042', () => { expect(GAME.map(l => l.id)).toEqual([...Array(42)].map((_, i) => 'L' + String(i + 1).padStart(4, '0'))); });
   /* levels where the shortest-path search finishes: the saved minMoves must be the shortest */
-  const EXACT = new Set(['L0001', 'L0002', 'L0003', 'L0004', 'L0005', 'L0006', 'L0007', 'L0008', 'L0009', 'L0010', 'L0011', 'L0012', 'L0013', 'L0014', 'L0016', 'L0017', 'L0019', 'L0027', 'L0032', 'L0033', 'L0037']);
+  const EXACT = new Set(['L0001', 'L0002', 'L0003', 'L0004', 'L0005', 'L0006', 'L0007', 'L0008', 'L0009', 'L0010', 'L0011', 'L0012', 'L0013', 'L0014', 'L0016', 'L0017', 'L0019', 'L0022', 'L0027', 'L0032', 'L0033', 'L0037']);
   for (const lv of GAME) {
     it(`${lv.id} has no data problems`, () => { expect(check(lv)).toEqual([]); });
     if (EXACT.has(lv.id)) it(`${lv.id} solves in its saved minMoves (${lv.solution.minMoves})`, () => {
