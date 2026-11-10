@@ -10,8 +10,7 @@ export const COLORS = [
   {key: 'purple', name: 'Purple', hex: '#A23CFF', letter: 'p'},
   {key: 'orange', name: 'Orange', hex: '#FF8A1A', letter: 'o'},
   {key: 'cyan', name: 'Cyan', hex: '#19D8F5', letter: 'c'},
-  {key: 'pink', name: 'Pink', hex: '#FF4FB0', letter: 'k'},
-  {key: 'mint', name: 'Mint', hex: '#6EEB9B', letter: 'm'}
+  {key: 'pink', name: 'Pink', hex: '#FF4FB0', letter: 'k'}
 ];
 export const COLOR = Object.fromEntries(COLORS.map(c => [c.key, c]));
 export const KINDS = ['round', 'axle'];           // axle = the X-shaped hole and X Stud

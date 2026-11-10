@@ -10,9 +10,13 @@ export function hsv(r, g, b) {
   if (d) { if (mx === r) h = ((g - b) / d) % 6; else if (mx === g) h = (b - r) / d + 2; else h = (r - g) / d + 4; h *= 60; if (h < 0) h += 360; }
   return [h, mx ? d / mx : 0, mx / 255];
 }
-/* hue as drawn in the game, where it differs from the swatch hex: game green is a darker grass green, mint is the light green */
-const GAME_HUE = {green: 106, mint: 139};
-const HUES = COLORS.map(c => { const n = parseInt(c.hex.slice(1), 16); return {key: c.key, h: GAME_HUE[c.key] ?? hsv(n >> 16, (n >> 8) & 255, n & 255)[0]}; });
+/* hue as drawn in the game, where it differs from the swatch hex: game green is a darker grass green */
+const GAME_HUE = {green: 106};
+/* the game also draws a light green that is not one of the level colors: it is read as its own hue so its blocks stay apart,
+   then toLevel gives it a level color that the level does not use yet */
+const EXTRA = 'lightgreen';
+const HUES = COLORS.map(c => { const n = parseInt(c.hex.slice(1), 16); return {key: c.key, h: GAME_HUE[c.key] ?? hsv(n >> 16, (n >> 8) & 255, n & 255)[0]}; })
+  .concat([{key: EXTRA, h: 139}]);
 const hueDist = (a, b) => { const d = Math.abs(a - b) % 360; return d > 180 ? 360 - d : d; };
 export function nearestColor(h) { let best = null, bd = 1e9; HUES.forEach(c => { const d = hueDist(h, c.h); if (d < bd) { bd = d; best = c.key; } }); return best; }
 
@@ -192,6 +196,9 @@ export function toLevel(an, base) {
   const lv = {schema: 'level/v1', id: (base && base.id) || 'L0000', time: (base && base.time) || 120, reward: (base && base.reward) || 30,
     board: [], targets: [], blocks: [], solution: {minMoves: 0, traps: 0}};
   const {cols, rows, cells} = an, notes = [];
+  const seen = new Set(cells.map(a => a.color).filter(Boolean));
+  const swap = seen.has(EXTRA) ? (COLORS.find(c => !seen.has(c.key)) || COLORS[3]).key : null;
+  if (swap) { cells.forEach(a => { if (a.color === EXTRA) a.color = swap; }); notes.push(`Light green in the screenshot is not a level color: it was changed to ${swap}.`); }
   for (let r = 0; r < rows; r++) { let s = ''; for (let c = 0; c < cols; c++) s += cells[r * cols + c].type === 'wall' ? 'W' : '.'; lv.board.push(s); }
   cells.forEach(a => { if (a.type === 'stud') lv.targets.push({at: [a.c, a.r], color: a.color, kind: a.kind}); });
   const used = {};

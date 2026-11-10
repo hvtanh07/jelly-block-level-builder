@@ -5303,7 +5303,7 @@
           1,
           1
         ],
-        "color": "mint",
+        "color": "purple",
         "kind": "round"
       },
       {
@@ -5332,8 +5332,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "p1",
+        "color": "purple",
         "cells": [
           [
             5,
@@ -5351,8 +5351,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "p2",
+        "color": "purple",
         "cells": [
           [
             3,
@@ -5521,8 +5521,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m3",
-        "color": "mint",
+        "id": "p3",
+        "color": "purple",
         "cells": [
           [
             4,
@@ -5638,7 +5638,7 @@
           3,
           3
         ],
-        "color": "mint",
+        "color": "red",
         "kind": "round"
       },
       {
@@ -5660,8 +5660,8 @@
     ],
     "blocks": [
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "r1",
+        "color": "red",
         "cells": [
           [
             2,
@@ -5748,8 +5748,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "r2",
+        "color": "red",
         "cells": [
           [
             2,
@@ -6185,7 +6185,7 @@
           3,
           0
         ],
-        "color": "mint",
+        "color": "yellow",
         "kind": "round"
       },
       {
@@ -6301,8 +6301,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "y1",
+        "color": "yellow",
         "cells": [
           [
             0,
@@ -6419,8 +6419,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "y2",
+        "color": "yellow",
         "cells": [
           [
             5,
@@ -6453,8 +6453,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m3",
-        "color": "mint",
+        "id": "y3",
+        "color": "yellow",
         "cells": [
           [
             3,
@@ -6521,8 +6521,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m4",
-        "color": "mint",
+        "id": "y4",
+        "color": "yellow",
         "cells": [
           [
             2,
@@ -6598,7 +6598,7 @@
           3,
           0
         ],
-        "color": "mint",
+        "color": "green",
         "kind": "axle"
       },
       {
@@ -6630,7 +6630,7 @@
           0,
           2
         ],
-        "color": "mint",
+        "color": "green",
         "kind": "round"
       },
       {
@@ -6759,8 +6759,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "g1",
+        "color": "green",
         "cells": [
           [
             3,
@@ -6906,8 +6906,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "g2",
+        "color": "green",
         "cells": [
           [
             4,
@@ -6948,8 +6948,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m3",
-        "color": "mint",
+        "id": "g3",
+        "color": "green",
         "cells": [
           [
             3,
@@ -7043,8 +7043,8 @@
         "axis": "horizontal"
       },
       {
-        "id": "m4",
-        "color": "mint",
+        "id": "g4",
+        "color": "green",
         "cells": [
           [
             6,
@@ -7935,7 +7935,7 @@
           4,
           9
         ],
-        "color": "mint",
+        "color": "red",
         "kind": "round"
       }
     ],
@@ -8061,8 +8061,8 @@
         "cover": 7
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "r1",
+        "color": "red",
         "cells": [
           [
             0,
@@ -8113,8 +8113,8 @@
         "cover": 10
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "r2",
+        "color": "red",
         "cells": [
           [
             2,
@@ -8229,8 +8229,8 @@
         "cover": 7
       },
       {
-        "id": "m3",
-        "color": "mint",
+        "id": "r3",
+        "color": "red",
         "cells": [
           [
             7,
@@ -8321,8 +8321,8 @@
         "axis": "vertical"
       },
       {
-        "id": "m4",
-        "color": "mint",
+        "id": "r4",
+        "color": "red",
         "cells": [
           [
             4,
@@ -8378,8 +8378,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m5",
-        "color": "mint",
+        "id": "r5",
+        "color": "red",
         "cells": [
           [
             3,
@@ -8464,7 +8464,7 @@
           2,
           0
         ],
-        "color": "mint",
+        "color": "orange",
         "kind": "round"
       },
       {
@@ -8604,8 +8604,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "o1",
+        "color": "orange",
         "cells": [
           [
             0,
@@ -8909,8 +8909,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "o2",
+        "color": "orange",
         "cells": [
           [
             2,
@@ -11321,7 +11321,7 @@
           1,
           0
         ],
-        "color": "mint",
+        "color": "red",
         "kind": "round"
       },
       {
@@ -11439,8 +11439,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "r1",
+        "color": "red",
         "cells": [
           [
             5,
@@ -11481,8 +11481,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "r2",
+        "color": "red",
         "cells": [
           [
             7,
@@ -12370,7 +12370,7 @@
           0,
           1
         ],
-        "color": "mint",
+        "color": "red",
         "kind": "round"
       },
       {
@@ -12552,8 +12552,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "r1",
+        "color": "red",
         "cells": [
           [
             5,
@@ -13243,7 +13243,7 @@
           0,
           6
         ],
-        "color": "mint",
+        "color": "green",
         "kind": "round"
       },
       {
@@ -13257,8 +13257,8 @@
     ],
     "blocks": [
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "g1",
+        "color": "green",
         "cells": [
           [
             0,
@@ -13322,8 +13322,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "g2",
+        "color": "green",
         "cells": [
           [
             4,
@@ -13472,8 +13472,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m3",
-        "color": "mint",
+        "id": "g3",
+        "color": "green",
         "cells": [
           [
             6,
@@ -13618,8 +13618,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m4",
-        "color": "mint",
+        "id": "g4",
+        "color": "green",
         "cells": [
           [
             7,
@@ -13656,8 +13656,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m5",
-        "color": "mint",
+        "id": "g5",
+        "color": "green",
         "cells": [
           [
             0,
@@ -13784,8 +13784,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m6",
-        "color": "mint",
+        "id": "g6",
+        "color": "green",
         "cells": [
           [
             3,
@@ -13993,7 +13993,7 @@
           6,
           0
         ],
-        "color": "mint",
+        "color": "green",
         "kind": "round"
       },
       {
@@ -14077,8 +14077,8 @@
         "socketKind": "round"
       },
       {
-        "id": "m1",
-        "color": "mint",
+        "id": "g3",
+        "color": "green",
         "cells": [
           [
             4,
@@ -14364,8 +14364,8 @@
         "axis": "horizontal"
       },
       {
-        "id": "m2",
-        "color": "mint",
+        "id": "g4",
+        "color": "green",
         "cells": [
           [
             3,

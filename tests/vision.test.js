@@ -13,7 +13,7 @@ describe('screenshot import', () => {
   it('reads the walls', () => { expect(level.board).toEqual(['.........', '.........', '.........', '.........', '...W.W...', '.........', '....W....', '....W....', '.........', '.........']); });
   it('reads the studs', () => {
     const s = level.targets.map(t => `${t.at[0]},${t.at[1]} ${t.color}`).sort();
-    expect(s).toEqual(['0,5 cyan', '2,0 mint', '4,0 blue', '4,9 red', '5,6 yellow', '6,0 green', '3,6 purple', '8,5 cyan'].sort());
+    expect(s).toEqual(['0,5 cyan', '2,0 orange', '4,0 blue', '4,9 red', '5,6 yellow', '6,0 green', '3,6 purple', '8,5 cyan'].sort());
   });
   it('joins cells into the right blocks', () => {
     expect(level.blocks.length).toBe(24);
