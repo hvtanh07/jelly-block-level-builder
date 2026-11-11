@@ -8644,8 +8644,8 @@
         "socketKind": "round"
       },
       {
-        "id": "p1",
-        "color": "purple",
+        "id": "k2",
+        "color": "pink",
         "cells": [
           [
             4,
@@ -8660,12 +8660,11 @@
           4,
           5
         ],
-        "socketKind": "round",
-        "spoon": "purple"
+        "socketKind": "round"
       },
       {
-        "id": "k2",
-        "color": "pink",
+        "id": "p1",
+        "color": "purple",
         "cells": [
           [
             1,
@@ -8680,7 +8679,8 @@
           1,
           6
         ],
-        "socketKind": "round"
+        "socketKind": "round",
+        "spoon": "purple"
       },
       {
         "id": "r3",
@@ -8787,7 +8787,7 @@
       }
     ],
     "solution": {
-      "minMoves": 64,
+      "minMoves": 42,
       "traps": 0
     }
   },
