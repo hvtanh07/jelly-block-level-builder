@@ -13258,7 +13258,7 @@
   {
     "schema": "level/v1",
     "id": "L0040",
-    "time": 150,
+    "time": 180,
     "reward": 40,
     "hard": true,
     "board": [
@@ -13352,7 +13352,7 @@
           4
         ],
         "socketKind": "round",
-        "cover": 1
+        "cover": 2
       },
       {
         "id": "k1",
@@ -13456,7 +13456,7 @@
           4
         ],
         "socketKind": "round",
-        "freeze": 2
+        "freeze": 3
       },
       {
         "id": "p1",
@@ -13477,6 +13477,21 @@
         ],
         "socketKind": "round",
         "spoon": "purple"
+      },
+      {
+        "id": "g2",
+        "color": "green",
+        "cells": [
+          [
+            5,
+            7
+          ]
+        ],
+        "socket": [
+          5,
+          7
+        ],
+        "socketKind": "round"
       }
     ],
     "joints": [
@@ -13512,7 +13527,7 @@
       }
     ],
     "solution": {
-      "minMoves": 21,
+      "minMoves": 30,
       "traps": 0
     }
   },
